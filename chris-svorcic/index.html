@@ -418,19 +418,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         
         function OnMoreInfoButtonClicked() {
             var formAction = "https://www.getdrip.com/forms/866587797/submissions";
-            SubmitFormAction(formAction);
+            var formGtmId = "moreInfo";
+            SubmitFormAction(formAction, formGtmId);
         }
         
         function OnBuyButtonClicked() {
             var formAction = "https://www.getdrip.com/forms/829313278/submissions";
-            SubmitFormAction(formAction);
+            var formGtmId = "buy";
+            SubmitFormAction(formAction, formGtmId);
         }
         
-        function SubmitFormAction(formAction) {
+        function SubmitFormAction(formAction, formGtmId) {
             var frm = document.getElementById("getDripForm") || null;
         
             if (frm && $("#getDripForm").valid()) {
                 frm.action = formAction;
+                frm.setAttribute('data-gtmid', formGtmId);
                 frm.submit();
             }
             else {
@@ -445,19 +448,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
         function OnMoreInfoScrollButtonClicked() {
             var formAction = "https://www.getdrip.com/forms/866587797/submissions";
-            SubmitFormScrollAction(formAction);
+            var formGtmId = "moreInfo";
+            SubmitFormScrollAction(formAction, formGtmId);
         }
     
         function OnBuyButtonScrollClicked() {
             var formAction = "https://www.getdrip.com/forms/829313278/submissions";
-            SubmitFormScrollAction(formAction);
+            var formGtmId = "buy";
+            SubmitFormScrollAction(formAction, formGtmId);
         }
     
-        function SubmitFormScrollAction(formAction) {
+        function SubmitFormScrollAction(formAction, formGtmId) {
             var frm = document.getElementById("getDripScrollForm") || null;
     
             if (frm && $("#getDripScrollForm").valid()) {
                 frm.action = formAction;
+                frm.setAttribute('data-gtmid', formGtmId);
                 frm.submit();
             }
             else {
