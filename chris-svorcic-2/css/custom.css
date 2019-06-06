@@ -1,5 +1,5 @@
 .hiddenThanksMessage {
-    /*display:none;*/
+    display:none;
     background-color: rgb(217, 242, 219);
     color: rgb(34, 34, 34);
     font-size: 15px;
@@ -8,7 +8,7 @@
 }
 
 .paymentSucceededMessage {
-    /*display:none;*/
+    display:none;
     background-color: rgb(217, 242, 219);
     color: rgb(34, 34, 34);
     text-align: center;
