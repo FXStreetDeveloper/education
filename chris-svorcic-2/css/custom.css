@@ -21,6 +21,10 @@
     position: relative;
     top: 3px;
 }
+.paymentSucceededMessage span{
+        font-size:.5em;
+}
+
 
 @media (min-width: 992px) {
     .hiddenThanksMessage {
