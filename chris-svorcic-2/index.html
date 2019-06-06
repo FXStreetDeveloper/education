@@ -841,9 +841,9 @@
         })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
     </script>
 <script>
-    //"https://externalservices-qa-bo-webapi-fxs.azurewebsites.net/api/stripepayment/getclientsecret/67d53451-5bdc-4266-a219-50cbbd5a8d5a",
+    
     $.get(
-        "https://externalservices-bo-webapi-fxs.azurewebsites.net/api/stripepayment/getclientsecret/67d53451-5bdc-4266-0000-50cbbd5a8d5a",
+        "https://externalservices-bo-webapi-fxs.azurewebsites.net/api/stripepayment/getclientsecret/67d53451-5bdc-4266-a219-50cbbd5a8d5a",
         function(data, status) {
             var stripe = Stripe('pk_live_NTecN7Dq9XXLUc5XfiSv9TMt');
             var elements = stripe.elements();
