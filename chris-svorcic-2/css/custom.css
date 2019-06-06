@@ -94,7 +94,8 @@
 }
 
 #drip-155184 .drip-submit-button {
-    width:330px;
+    box-sizing: border-box;
+
 }
 
 .banner-registration{
