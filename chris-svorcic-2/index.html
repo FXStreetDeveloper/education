@@ -767,39 +767,14 @@
     <script src="https://js.stripe.com/v3/">
     </script>
     <script type="text/javascript">
-        function OnMoreInfoButtonClicked() {
-            var formAction = "https://www.getdrip.com/forms/866587797/submissions";
-            var formGtmId = "moreInfo";
-            SubmitFormAction(formAction, formGtmId);
-        }
-
-        function OnBuyButtonClicked() {
-            var formAction = "https://www.getdrip.com/forms/829313278/submissions";
-            var formGtmId = "buy";
-            SubmitFormAction(formAction, formGtmId);
-        }
-
-        function SubmitFormAction(formAction, formGtmId) {
-            var frm = document.getElementById("getDripForm") || null;
-            if (frm && $("#getDripForm").valid()) {
-                frm.action = formAction;
-                frm.setAttribute('data-gtmid', formGtmId);
-                frm.submit();
-            } else {
-                var errorMessageDiv = document.getElementById('errorMessageDiv');
-                errorMessageDiv.removeAttribute("hidden");
-            }
-        }
-    </script>
-    <script type="text/javascript">
         function OnMoreInfoScrollButtonClicked() {
-            var formAction = "https://www.getdrip.com/forms/866587797/submissions";
+            var formAction = "https://www.getdrip.com/forms/808079412/submissions";
             var formGtmId = "moreInfo";
             SubmitFormScrollAction(formAction, formGtmId);
         }
 
         function OnBuyButtonScrollClicked() {
-            var formAction = "https://www.getdrip.com/forms/829313278/submissions";
+            var formAction = "https://www.getdrip.com/forms/808079412/submissions";
             var formGtmId = "buy";
             SubmitFormScrollAction(formAction, formGtmId);
         }
@@ -863,7 +838,7 @@
     </script>
     <script>
         $.get(
-            "http://externalservices-qa-bo-webapi-fxs.azurewebsites.net/api/stripepayment/getclientsecret/67d53451-5bdc-4266-a219-50cbbd5a8d5a",
+            "https://externalservices-qa-bo-webapi-fxs.azurewebsites.net/api/stripepayment/getclientsecret/67d53451-5bdc-4266-a219-50cbbd5a8d5a",
             function(data, status) {
                 var stripe = Stripe('pk_test_aPdPSWrI4am1nFqxpnUUURYC');
                 var elements = stripe.elements();
