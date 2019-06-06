@@ -464,6 +464,9 @@ Buttons Styles
   background-color: #e4871b;
   border:1px solid #e4871b;
   color: #fff;
+  max-width:100%;
+  overflow: hidden;
+  white-space: normal;
 }
 .btn.btn-border:focus, .btn.btn-border:visitedm .btn.btn-border:active {
   color: #111111;
