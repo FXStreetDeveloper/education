@@ -855,6 +855,7 @@
                     });
                 cardElement.mount('#card-element');
                 var cardholderName = document.getElementById('cardholder-name');
+                var cardholderEmail = document.getElementById('cardholder-email');
                 var cardButton = document.getElementById('card-button');
                 cardButton.attributes["data-secret"] = data.ClientSecret;
                 cardButton.dataset.secret = data.ClientSecret;
@@ -867,7 +868,8 @@
                             cardElement, {
                                 payment_method_data: {
                                     billing_details: {
-                                        name: cardholderName.value
+                                        name: cardholderName.value,
+                                        email: cardholderEmail.value
                                     }
                                 }
                             }).then(
