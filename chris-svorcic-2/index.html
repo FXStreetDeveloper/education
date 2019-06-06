@@ -840,67 +840,68 @@
             a.appendChild(r);
         })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
     </script>
-    <script>
-        $.get(
-            "https://externalservices-qa-bo-webapi-fxs.azurewebsites.net/api/stripepayment/getclientsecret/67d53451-5bdc-4266-a219-50cbbd5a8d5a",
-            function(data, status) {
-                var stripe = Stripe('pk_test_aPdPSWrI4am1nFqxpnUUURYC');
-                var elements = stripe.elements();
-                var cardElement = elements.create(
-                    'card', {
-                        'style': {
-                            'base': {
-                                'fontFamily': 'Arial, sans-serif',
-                                'fontSize': '18px',
-                                'color': '#C1C7CD',
-                            },
-                            'invalid': {
-                                'color': 'red',
-                            },
-                        }
-                    });
-                cardElement.mount('#card-element');
+<script>
+    //"https://externalservices-qa-bo-webapi-fxs.azurewebsites.net/api/stripepayment/getclientsecret/67d53451-5bdc-4266-a219-50cbbd5a8d5a",
+    $.get(
+        "https://externalservices-bo-webapi-fxs.azurewebsites.net/api/stripepayment/getclientsecret/67d53451-5bdc-4266-0000-50cbbd5a8d5a",
+        function(data, status) {
+            var stripe = Stripe('pk_live_NTecN7Dq9XXLUc5XfiSv9TMt');
+            var elements = stripe.elements();
+            var cardElement = elements.create(
+                'card', {
+                    'style': {
+                        'base': {
+                            'fontFamily': 'Arial, sans-serif',
+                            'fontSize': '18px',
+                            'color': '#C1C7CD',
+                        },
+                        'invalid': {
+                            'color': 'red',
+                        },
+                    }
+                });
+            cardElement.mount('#card-element');
 
-                var cardholderName = document.getElementById('cardholder-name');
-                var cardholderEmail = document.getElementById('cardholder-email');
-                var cardButton = document.getElementById('card-button');
+            var cardholderName = document.getElementById('cardholder-name');
+            var cardholderEmail = document.getElementById('cardholder-email');
+            var cardButton = document.getElementById('card-button');
 
-                cardButton.attributes["data-secret"] = data.ClientSecret;
-                cardButton.dataset.secret = data.ClientSecret;
+            cardButton.attributes["data-secret"] = data.ClientSecret;
+            cardButton.dataset.secret = data.ClientSecret;
 
-                var clientSecret = cardButton.dataset.secret;
-                cardButton.addEventListener(
-                    'click',
-                    function(ev) {
-                        stripe.handleCardPayment(
-                            clientSecret,
-                            cardElement, {
-                                payment_method_data: {
-                                    billing_details: {
-                                        name: cardholderName.value,
-                                        email: cardholderEmail.value
-                                    }
+            var clientSecret = cardButton.dataset.secret;
+            cardButton.addEventListener(
+                'click',
+                function(ev) {
+                    stripe.handleCardPayment(
+                        clientSecret,
+                        cardElement, {
+                            payment_method_data: {
+                                billing_details: {
+                                    name: cardholderName.value,
+                                    email: cardholderEmail.value
                                 }
-                            }).then(
-                            function(result) {
-                                if (result.error) {
-                                    $('#paymentErrorMessage').show();
-                                } else {
-                                    $('#paymentSucceededMessage').show();
-                                    $('#paymentBlock').hide();
-                                    $('#paymentErrorMessage').hide();
-                                }
-                            });
-                    });
-            });
-
-        $(document).ready(function() {
-            if (window.location.href.indexOf("thankyou") > -1) { 
-                $('#hiddenThanksMessage').show();
-            }
+                            }
+                        }).then(
+                        function(result) {
+                            if (result.error) {
+                                $('#paymentErrorMessage').show();
+                            } else {
+                                $('#paymentSucceededMessage').show();
+                                $('#paymentBlock').hide();
+                                $('#paymentErrorMessage').hide();
+                            }
+                        });
+                });
         });
 
-    </script>
+    $(document).ready(function() {
+        if (window.location.href.indexOf("thankyou") > -1) { 
+            $('#hiddenThanksMessage').show();
+        }
+    });
+
+</script>
 </body>
 
 </html>
