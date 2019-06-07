@@ -285,7 +285,7 @@ a:hover {
 .mock img {
   position: relative;
   border-radius: 50%;
-  max-width: 500px;
+  max-width: 300px;
 }
 
 @media screen and (max-width: 1199px) {
