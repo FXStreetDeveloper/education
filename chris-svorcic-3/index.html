@@ -24,6 +24,11 @@
     <link rel="stylesheet" href="css/custom.css">
     <!-- Google font -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400%7CUbuntu:400,700%7COpen+Sans" rel="stylesheet">
+    <script>
+        if (screen.width < 1024) {
+            document.location = "/chris-svorcic-3";
+        }
+    </script>
     <!-- Google Tag Manager -->
     <script>
         (function(w, d, s, l, i) {
@@ -986,14 +991,14 @@ A key point to consider when taking the course is that you not only will get Tra
             }
         }
         function SetxishowMe() {
-  var elem = document.getElementById("formstripediv");
-  var foo = window.getComputedStyle(elem, null);
-  if (foo.getPropertyValue("display") == 'none') {
-    elem.style.display = 'block';
-  } else {
-    elem.style.display = 'none';
-  }
-}
+            var elem = document.getElementById("formstripediv");
+            var foo = window.getComputedStyle(elem, null);
+            if (foo.getPropertyValue("display") == 'none') {
+                elem.style.display = 'block';
+            } else {
+                elem.style.display = 'none';
+            }
+        }
     </script>
     <script type="text/javascript">
         var _dcq = _dcq || [];
