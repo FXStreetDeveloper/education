@@ -15,7 +15,7 @@ All responsive css rule
 
   .feature-content {
     width: 75%;
-    margin-top: 12px;
+    margin-top: 0px;
   }
 
   .screenshot-wrap {
@@ -29,7 +29,7 @@ All responsive css rule
   }
 
   .testimonial-carousel .testimonial {
-    padding: 0 150px;
+    padding: 0 110px;
   }
 }
 

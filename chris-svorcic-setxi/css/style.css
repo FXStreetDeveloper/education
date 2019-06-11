@@ -285,11 +285,11 @@ a:hover {
 .mock img {
   position: relative;
   border-radius: 50%;
-  max-width: 300px;
+  max-width: 240px;
 }
 
 @media screen and (max-width: 1199px) {
-.mock img {max-width: 280px;}
+.mock img {max-width: 240px;}
 .feature-content{width: 75%;}
 }
 
@@ -423,7 +423,7 @@ Buttons Styles
   font-weight: bold;
   border: 1px solid #e4871b;
   line-height: 39px;
-  padding: 0 35px;
+  padding: 0 25px;
   letter-spacing: 1.3px;
   border-radius: 20px;
   -webkit-transition: all 0.3s ease;
@@ -709,15 +709,15 @@ Features Styles
 }
 
 .feature-icon {
-  font-size: 2.5rem;
-  width: 70px;
-  height: 70px;
+  font-size: 2rem;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   border: 1px solid #338473;
-  line-height: 68px;
+  line-height: 5rem;
   text-align: center;
   color: #338473;
-  margin-right: 30px;
+  margin-right: 19px;
   float: left;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -742,7 +742,7 @@ Features Styles
 }
 
 .feature-title {
-  font-size: 2.2rem;
+  font-size: 2rem;
   margin-top: 5px;
   margin-bottom: 5px;
   color: #255f53;
@@ -875,6 +875,10 @@ Pricing Styles
   text-align: center;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  padding: 10px;
+  opacity:0.9;
+  color: #25252B;
+  background-color: white;
 }
 .pricing-table .pricing-header {
   border-top: 10px solid #304C70;
@@ -918,7 +922,7 @@ Pricing Styles
   border-color: #304C70;
 }
 .pricing-table:hover .btn, .pricing-table.active .btn {
-  background-color: #c0392b;
+  background-color: #b66c16;
   color: #ffffff;
 }
 
