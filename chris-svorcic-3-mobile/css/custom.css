@@ -107,6 +107,7 @@
     left:0;bottom:0;right:0;
     text-align: center;
     z-index:3;
+    border-top: 3px solid #242d38;
 }
 .bottom-fixed .pack-price {
     font-size: 2rem;
