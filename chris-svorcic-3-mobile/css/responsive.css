@@ -329,13 +329,13 @@ All responsive css rule
 
   .feature {
     text-align: center;
-    margin-top: 40px;
+    margin-top: 0px;
   }
   .feature:first-child {
     margin-top: 0;
   }
   .col-sm-6:last-child .feature {
-    margin-top: 40px;
+    margin-top: 0px;
   }
   .feature .feature-icon {
     margin-left: auto;

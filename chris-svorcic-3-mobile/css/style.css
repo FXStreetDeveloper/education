@@ -423,7 +423,7 @@ Buttons Styles
   font-weight: bold;
   border: 1px solid #e4871b;
   line-height: 39px;
-  padding: 0 35px;
+  padding: 0 10px;
   letter-spacing: 1.3px;
   border-radius: 20px;
   -webkit-transition: all 0.3s ease;
@@ -890,11 +890,12 @@ Pricing Styles
   margin: 0;
 }
 .pricing-table .pack-price {
-  font-size: 4.2rem;
+  font-size: 3.5rem;
   margin: 0;
   padding: 10px 20px 15px;
   font-weight: 700;
   font-family: "Poppins", sans-serif;
+  line-height: 2rem;
 }
 .pricing-table .pack-price .currency,
 .pricing-table .pack-price .pack-duration {
@@ -905,11 +906,11 @@ Pricing Styles
 .pricing-table .pack-features {
   list-style: none;
   line-height: 1.75;
-  margin: 0 0 42px;
+  margin: 0 0 0px;
   padding: 0;
 }
 .pricing-table .btn {
-  margin-bottom: 52px;
+  margin-bottom: 12px;
 }
 .pricing-table:hover, .pricing-table.active {
   border-color: #304C70;
@@ -918,7 +919,7 @@ Pricing Styles
   border-color: #304C70;
 }
 .pricing-table:hover .btn, .pricing-table.active .btn {
-  background-color: #c0392b;
+  background-color: #e4871b;
   color: #ffffff;
 }
 
@@ -1283,7 +1284,7 @@ Footer Styles
   color: #304C70;
 }
 .socials a + a {
-  margin-left: 16px;
+  margin-left: 0px;
 }
 .socials a:hover {
   background-color: #304C70;
