@@ -22,16 +22,16 @@
     top: 3px;
 }
 .paymentSucceededMessage span{
-        font-size:.5em;
+        font-size:18px;
 }
 
 
 @media (min-width: 992px) {
     .hiddenThanksMessage {
-        font-size: 25px;
+        font-size: 18px;
     }
     .paymentSucceededMessage {
-        font-size: 30px;
+        font-size: 18px;
         padding: 3vw 0;
     }
     .paymentSucceededMessage svg {
