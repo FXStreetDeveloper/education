@@ -1,7 +1,7 @@
 <form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" target="_top">
 	<input type="hidden" name="cmd" value="_s-xclick">
     <input type="hidden" name="rm" value="2">
-	<input type="hidden" name="hosted_button_id" value="4NQQL3GRZC528">
+	<input type="hidden" name="hosted_button_id" value="DYRX4BUTEK63U">
 	<input type="hidden" name="notify_url" value="https://qa.fxstreet.com/paypal/notifications/">
 	<input type="hidden" name="cancel_return" value="https://qa.fxstreet.com/signals">
 	<input type="hidden" name="return" value="https://qa.fxstreet.com/signals/">
@@ -11,20 +11,21 @@
 </form>
 <script>
     function getCookie(cname) {
-    var name = cname + "=";
-    var decodedCookie = decodeURIComponent(document.cookie);
-    var ca = decodedCookie.split(';');
-    for(var i = 0; i <ca.length; i++) {
-        var c = ca[i];
-        while (c.charAt(0) == ' ') {
-        c = c.substring(1);
+        var name = cname + "=";
+        var decodedCookie = decodeURIComponent(document.cookie);
+        var ca = decodedCookie.split(';');
+        for(var i = 0; i <ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+            }
+            if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+            }
         }
-        if (c.indexOf(name) == 0) {
-        return c.substring(name.length, c.length);
-        }
+        return undefined;
     }
-    return undefined;
-    }
+
     setTimeout(function(){
     
     var customField = document.getElementById("custom_signals_1");
