@@ -43,6 +43,36 @@
         })(window, document, 'script', 'dataLayer', 'GTM-PN69BN');
     </script>
     <!-- End Google Tag Manager -->
+    <script>
+        function getCookie(cname) {
+          var name = cname + "=";
+          var decodedCookie = decodeURIComponent(document.cookie);
+          var ca = decodedCookie.split(';');
+          for(var i = 0; i <ca.length; i++) {
+              var c = ca[i];
+              while (c.charAt(0) == ' ') {
+              c = c.substring(1);
+              }
+              if (c.indexOf(name) == 0) {
+              return c.substring(name.length, c.length);
+              }
+          }
+          return undefined;
+          }
+      setTimeout(function(){
+      
+      var customField = document.getElementById("custom_signals_1");
+      if(customField.value.split("|").length > 2)
+          return;
+      
+      var cid = "0dfa3a67-bce1-4249-9925-6184474a9239";
+      var cookie = getCookie("cid");
+      if (cookie != undefined) 
+          cid = cookie;
+      
+      customField.value = customField.value.concat("|",cid);
+      }, 3000);
+      </script>
 </head>
 
 <body class="appear-animate">
@@ -92,7 +122,17 @@
                                                 <span onclick="showEmailLead('Ninjatrader','header')" id="headerNinjatraderTrigger"> Ninjatrader </span>
                                                 <span onclick="showPaymentLink('header')" id="headerCtraderTrigger"> Ctrader </span>
 
-                                                <a target="_blank" data-gtmid="signalslanding-visibility-payment1" id="headerPayment" class="payment hidden" href="https://www.fxstreet.com/signals/download">PROCEED TO PAYMENT<span class="fa fa-credit-card" aria-hidden="true"></span></a>
+                                                <form id="headerPayment" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                                                    <input type="hidden" name="cmd" value="_s-xclick">
+                                                    <input type="hidden" name="rm" value="2">
+                                                    <input type="hidden" name="hosted_button_id" value="DYRX4BUTEK63U">
+                                                    <input type="hidden" name="notify_url" value="https://qa.fxstreet.com/paypal/notifications/">
+                                                    <input type="hidden" name="cancel_return" value="https://qa.fxstreet.com/signals">
+                                                    <input type="hidden" name="return" value="https://qa.fxstreet.com/signals/">
+                                                    <input id="custom_signals_1" type="hidden" name="custom" value="E9CEB64C-D4DE-43A0-9185-980BF01F9503|BA7897CE-E16A-4BB6-8C05-ED4499DC3C29">
+                                                    <input type="hidden" name="lc" value="en_US">
+                                                    <button type="submit" data-gtmid="landing-premium-1month" class="fxs_btn fxs_btn_cta fxs_btn_block">Subscribe Signals</button>
+                                                </form>
                                                 <form action="https://docs.google.com/forms/d/e/1FAIpQLSfl76vAsY3SCRe_H2dnPd75y9R0fso2qy4J5RJ22rsdgf8YRg/formResponse" method="POST" id="headerSendEmail" class="sendEmail hidden" target="headerIframe" onsubmit="sendEmailLead('header',);">
                                                     <label for="headerEmail">Please type your email</label>
                                                     <input type="email" class="email" id="headerEmail" name="entry.1342467543" onblur="updateForm('headerEmail')">
