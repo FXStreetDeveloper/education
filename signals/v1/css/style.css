@@ -3245,7 +3245,7 @@ a.logo:hover {
     position: absolute;
     top: 0;
     left: 0;
-    line-height: 40px;
+    line-height: 50px;
     text-align: center;
     font-size: 28px;
     color: #111;
@@ -3471,7 +3471,7 @@ a.logo:hover {
     }
 
 .alt-features-title {
-    margin-bottom: 21px;
+    margin-bottom: 15px;
     font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
