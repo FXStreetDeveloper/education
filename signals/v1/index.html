@@ -59,9 +59,9 @@
           }
           return undefined;
           }
-      setTimeout(function(){
+          function setCustomCid(buttonId){
       
-      var customField = document.getElementById("custom_signals_1");
+      var customField = document.getElementById(buttonId);
       if(customField.value.split("|").length > 2)
           return;
       
@@ -71,6 +71,11 @@
           cid = cookie;
       
       customField.value = customField.value.concat("|",cid);
+      }
+      setTimeout(function(){
+        setCustomCid("custom_signals_1");
+        setCustomCid("custom_signals_3");
+        setCustomCid("custom_signals_12");
       }, 3000);
       </script>
 </head>
@@ -126,16 +131,38 @@
                                                 <span onclick="showEmailLead('Ninjatrader','header')" id="headerNinjatraderTrigger"> Ninjatrader </span>
                                                 <span onclick="showPaymentLink('header')" id="headerCtraderTrigger"> Ctrader </span>
 
-                                                <form id="headerPayment" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                                                <form id="headerPayment" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
                                                     <input type="hidden" name="cmd" value="_s-xclick">
                                                     <input type="hidden" name="rm" value="2">
-                                                    <input type="hidden" name="hosted_button_id" value="DYRX4BUTEK63U">
-                                                    <input type="hidden" name="notify_url" value="https://qa.fxstreet.com/paypal/notifications/">
-                                                    <input type="hidden" name="cancel_return" value="https://qa.fxstreet.com/signals">
-                                                    <input type="hidden" name="return" value="https://qa.fxstreet.com/signals/">
+                                                    <input type="hidden" name="hosted_button_id" value="QPJAZNXPEAKPS">
+                                                    <input type="hidden" name="notify_url" value="https://www.fxstreet.com/paypal/notifications/">
+                                                    <input type="hidden" name="cancel_return" value="https://landing.fxstreet.com/signals/v1/">
+                                                    <input type="hidden" name="return" value="https://www.fxstreet.com/signals-test">
                                                     <input id="custom_signals_1" type="hidden" name="custom" value="E9CEB64C-D4DE-43A0-9185-980BF01F9503|BA7897CE-E16A-4BB6-8C05-ED4499DC3C29">
                                                     <input type="hidden" name="lc" value="en_US">
-                                                    <button type="submit" data-gtmid="landing-premium-1month" class="fxs_btn fxs_btn_cta fxs_btn_block">Subscribe Signals</button>
+                                                    <button type="submit" data-gtmid="landing-premium-1month" class="fxs_btn fxs_btn_cta fxs_btn_block">Monthly Subscription</button>
+                                                </form>
+                                                <form id="headerPayment" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                                                    <input type="hidden" name="cmd" value="_s-xclick">
+                                                    <input type="hidden" name="rm" value="2">
+                                                    <input type="hidden" name="hosted_button_id" value="5NQ5SW7GCGEQ6">
+                                                    <input type="hidden" name="notify_url" value="https://www.fxstreet.com/paypal/notifications/">
+                                                    <input type="hidden" name="cancel_return" value="https://landing.fxstreet.com/signals/v1/">
+                                                    <input type="hidden" name="return" value="https://www.fxstreet.com/signals-test">
+                                                    <input id="custom_signals_3" type="hidden" name="custom" value="E9CEB64C-D4DE-43A0-9185-980BF01F9503|DE0212BB-054A-4ADB-A3CB-26B11FF3B334">
+                                                    <input type="hidden" name="lc" value="en_US">
+                                                    <button type="submit" data-gtmid="landing-premium-1month" class="fxs_btn fxs_btn_cta fxs_btn_block">Quarter Subscription</button>
+                                                </form>
+                                                <form id="headerPayment" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                                                    <input type="hidden" name="cmd" value="_s-xclick">
+                                                    <input type="hidden" name="rm" value="2">
+                                                    <input type="hidden" name="hosted_button_id" value="HFC2S342WNV5N">
+                                                    <input type="hidden" name="notify_url" value="https://www.fxstreet.com/paypal/notifications/">
+                                                    <input type="hidden" name="cancel_return" value="https://landing.fxstreet.com/signals/v1/">
+                                                    <input type="hidden" name="return" value="https://www.fxstreet.com/signals-test">
+                                                    <input id="custom_signals_12" type="hidden" name="custom" value="E9CEB64C-D4DE-43A0-9185-980BF01F9503|F6BB3EA9-E28D-46EE-8889-6949518353DF">
+                                                    <input type="hidden" name="lc" value="en_US">
+                                                    <button type="submit" data-gtmid="landing-premium-1month" class="fxs_btn fxs_btn_cta fxs_btn_block">Yearly Subscription</button>
                                                 </form>
                                                 <form action="https://docs.google.com/forms/d/e/1FAIpQLSfl76vAsY3SCRe_H2dnPd75y9R0fso2qy4J5RJ22rsdgf8YRg/formResponse" method="POST" id="headerSendEmail" class="sendEmail hidden" target="headerIframe" onsubmit="sendEmailLead('header',);">
                                                     <label for="headerEmail">Please type your email</label>
