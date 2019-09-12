@@ -7125,6 +7125,7 @@ section:hover .small-item-carousel .owl-next {
         margin: 0 auto;
         margin-bottom:50px;
         right: inherit;
-
     }
+    h1{font-size: 22px;}
+    .h2-first-shot{font-size: 18px;}
 }
