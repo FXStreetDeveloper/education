@@ -914,6 +914,26 @@ a.btn-mod:focus {
   padding-bottom: 40px;
   transition: 0.5s padding ease-out;
   border-radius: 5px;
+  padding: 15px;
+}
+.home-text .col-lg-3 {
+  margin-bottom: 30px;
+}
+@media (min-width: 992px) {
+  .home-text .background {
+    height: 360px;
+  }
+  .home-text .background .local-scroll {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translate(-50%);
+  }
+}
+@media (min-width: 1200px) {
+  .home-text .background {
+    height: 450px;
+  }
 }
 .home-text.opened .background {
   padding-bottom: 225px;
@@ -5812,8 +5832,8 @@ section:hover .small-item-carousel .owl-next {
   margin: 0;
   color: #8c8d91;
 }
-.fxs_pricing_table_item.fxs_pricing_featured_offer .fxs_label{
-    color:white;
+.fxs_pricing_table_item.fxs_pricing_featured_offer .fxs_label {
+  color: white;
 }
 .fxs_pricing_table_item button {
   background-color: #e4871b;
@@ -5834,4 +5854,9 @@ section:hover .small-item-carousel .owl-next {
 .fxs_pricing_table_item.fxs_pricing_featured_offer button {
   background-color: white;
   color: #e4871b;
+}
+@media (min-width: 992px) {
+  .js-height-full.container {
+    height: auto !important;
+  }
 }
