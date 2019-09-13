@@ -312,7 +312,7 @@ h1 {
 }
 @media (min-width: 768px) {
   h1 {
-    font-size: 35px;
+    font-size: 33px;
   }
 }
 h2 {
@@ -909,6 +909,14 @@ a.btn-mod:focus {
   vertical-align: middle;
   padding-bottom: 0;
 }
+
+.home-text .background-2 {
+  background-color: #255f53;
+  padding-bottom: 40px;
+  transition: 0.5s padding ease-out;
+  border-radius: 5px;
+}
+
 .home-text .background {
   background-color: #304c70;
   padding-bottom: 40px;
