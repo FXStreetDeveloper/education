@@ -926,10 +926,12 @@ a.btn-mod:focus {
   margin-bottom: 30px;
 }
 @media (min-width: 992px) {
-  .home-text .background {
-    height: 360px;
+  .home-text .background,
+  .home-text .background-2 {
+    height: 350px;
   }
-  .home-text .background .local-scroll {
+  .home-text .background .local-scroll,
+  .home-text .background-2 .local-scroll {
     position: absolute;
     bottom: 30px;
     left: 50%;
@@ -937,8 +939,9 @@ a.btn-mod:focus {
   }
 }
 @media (min-width: 1200px) {
-  .home-text .background {
-    height: 450px;
+  .home-text .background,
+  .home-text .background-2 {
+    height: 400px;
   }
 }
 .home-text.opened .background {
@@ -1005,7 +1008,7 @@ a.btn-mod:focus {
   height: 40px;
   margin-left: -20px;
   position: absolute;
-  bottom: 20px;
+  bottom:-15px;
   left: 50%;
   text-align: center;
   text-decoration: none;
@@ -1013,6 +1016,11 @@ a.btn-mod:focus {
   -moz-transition: all 500ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
   -o-transition: all 500ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
   transition: all 500ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+@media(min-width:1200px){
+    .scroll-down {
+      bottom: 20px;
+    }
 }
 .scroll-down:before {
   display: block;
@@ -5862,9 +5870,10 @@ section:hover .small-item-carousel .owl-next {
   color: #e4871b;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
   .js-height-full.container {
     height: auto !important;
     padding-top: 60px;
+    padding-bottom: 40px;
   }
 }
