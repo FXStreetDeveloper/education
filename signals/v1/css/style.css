@@ -5864,6 +5864,8 @@ section:hover .small-item-carousel .owl-next {
   line-height: 34px;
   font-weight: bold;
   margin-top: 3rem;
+  text-decoration: none;
+  display:block;
 }
 .fxs_pricing_table_item.fxs_pricing_featured_offer a {
   background-color: white;
