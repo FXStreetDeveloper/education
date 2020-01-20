@@ -5849,7 +5849,7 @@ section:hover .small-item-carousel .owl-next {
 .fxs_pricing_table_item.fxs_pricing_featured_offer .fxs_label {
   color: white;
 }
-.fxs_pricing_table_item button {
+.fxs_pricing_table_item a {
   background-color: #e4871b;
   color: white;
   border: 1px solid #e4871b;
@@ -5864,8 +5864,10 @@ section:hover .small-item-carousel .owl-next {
   line-height: 34px;
   font-weight: bold;
   margin-top: 3rem;
+  text-decoration: none;
+  display:block;
 }
-.fxs_pricing_table_item.fxs_pricing_featured_offer button {
+.fxs_pricing_table_item.fxs_pricing_featured_offer a {
   background-color: white;
   color: #e4871b;
 }
