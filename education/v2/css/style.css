@@ -456,7 +456,9 @@ h6 {
 }
 
 h1 {
-    font-size: 30px;
+    font-size: 60px !important;
+    font-family:'Assistant', Arial, sans-serif !important;
+    letter-spacing: 0 !important;
 }
 
 @media(min-width:768px) {
@@ -540,7 +542,7 @@ hr {
 }
 
 .font-alt {
-    font-family: Dosis, arial, sans-serif;
+    font-family: Dosis, arial, sans-serif; 
     text-transform: uppercase;
     letter-spacing: 0.2em;
 }
