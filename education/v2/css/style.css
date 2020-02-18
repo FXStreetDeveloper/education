@@ -461,9 +461,9 @@ h1 {
     letter-spacing: 0 !important;
 }
 
-@media(min-width:768px) {
+@media(max-width:768px) {
     h1 {
-        font-size: 35px;
+        font-size: 35px !important;
     }
 }
 
@@ -586,6 +586,9 @@ hr {
 .background h2 {
     font-size: 40px;
     margin-bottom: 0;
+}
+@media (max-width: 768px){
+    .background h2{font-size: 30px;}
 }
 
 .background h3 {
@@ -3243,7 +3246,7 @@ a.logo:hover {
 
 .press-release{    
     position: relative;
-    padding-left: 55px;
+    
     padding-top: 3px;
     font-size: 17px;
     font-weight: 300;
