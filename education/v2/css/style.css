@@ -1176,7 +1176,7 @@ a.btn-mod {
 }
 
     .home-text .background {
-        background-color: #304C70;
+        background-color: #255F54;
         padding-bottom: 40px;
         transition: 0.5s padding ease-out;
         border-radius: 5px;
@@ -2988,7 +2988,7 @@ a.logo:hover {
 }
 
 .bg-green {
-    background-color: #58bf44 !important;
+    background-color: #338473 !important;
 }
 
 .bg-blue {
@@ -3240,6 +3240,18 @@ a.logo:hover {
     -ms-transition: all 0.3s cubic-bezier(0.000, 0.000, 0.580, 1.000);
     transition: all 0.3s cubic-bezier(0.000, 0.000, 0.580, 1.000);
 }
+
+.press-release{    
+    position: relative;
+    padding-left: 55px;
+    padding-top: 3px;
+    font-size: 17px;
+    font-weight: 300;
+    color: #777; 
+    text-align: left !important;
+}
+
+
 
 .alt-service-icon {
     width: 40px;
