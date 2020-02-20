@@ -747,6 +747,7 @@ a.btn-mod {
     transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);
 }
 
+
     .btn-mod.opened,
     .btn-mod:hover,
     .btn-mod:focus,
@@ -1002,6 +1003,12 @@ Courses Block
   background-color: #304C70;
   color: #ffffff;
 }
+
+.pricing-table .btn:hover, .pricing-table.active .btn:hover {
+  background-color: #6289AC;
+  color: #ffffff;
+}
+
 
 /* ==============================
    Forms fields
