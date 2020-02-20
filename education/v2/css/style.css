@@ -945,6 +945,64 @@ a.btn-mod {
 }
 
 
+
+
+/*=======================
+Courses Block
+========================= */
+
+.pricing-table {
+  border: 1px solid #304C70;
+  text-align: center;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.pricing-table .pricing-header {
+  border-top: 10px solid #304C70;
+  border-bottom: 1px solid #304C70;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+.pricing-table .pricing-header .pack-name {
+  padding: 15px 20px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #000000;
+  margin: 0;
+}
+.pricing-table .pack-price {
+  font-size: 15px;
+  margin: 0;
+  padding: 10px 20px 10px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+}
+.pricing-table .pack-price .currency,
+.pricing-table .pack-price .pack-duration {
+  font-weight: 400;
+  font-size: 15px;
+  vertical-align: baseline;
+}
+.pricing-table .pack-features {
+  list-style: none;
+  line-height: 1.75;
+  margin: 0 0 42px;
+  padding: 0;
+}
+.pricing-table .btn {
+  margin-bottom: 52px;
+}
+.pricing-table:hover, .pricing-table.active {
+  border-color: #304C70;
+}
+.pricing-table:hover .pricing-header, .pricing-table.active .pricing-header {
+  border-color: #304C70;
+}
+.pricing-table:hover .btn, .pricing-table.active .btn {
+  background-color: #304C70;
+  color: #ffffff;
+}
+
 /* ==============================
    Forms fields
    ============================== */
