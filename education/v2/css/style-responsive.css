@@ -843,3 +843,9 @@ Primary use:    MultiPurpose Template
 .mobile .page-section, .mobile .home-section, .mobile .small-section{
     background-attachment: scroll;
 }
+
+.home-section .container,
+.js-height-full{
+    height: 100vh;
+    display: block;
+}

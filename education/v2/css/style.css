@@ -7186,4 +7186,5 @@ section:hover .small-item-carousel .owl-next {
 .home-section .container,
 .js-height-full{
     height: 100vh;
+    display: block;
 }
