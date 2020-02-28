@@ -7132,8 +7132,3 @@ section:hover .small-item-carousel .owl-next {
     margin-top: 20px;
   }
 }
-.home-section .container,
-.js-height-full {
-  height: 100vh;
-  display: block;
-}
