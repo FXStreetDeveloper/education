@@ -7183,3 +7183,6 @@ section:hover .small-item-carousel .owl-next {
         margin-top: 20px;
     }
 }
+.js-height-full{
+    height: 100vh;
+}
