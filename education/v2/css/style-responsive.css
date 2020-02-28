@@ -136,7 +136,9 @@ Primary use:    MultiPurpose Template
     .page-section, .home-section, .small-section{
         background-attachment: scroll;
     }
-    
+    .home-section{
+        overflow-y: scroll;
+    }
     .owl-pagination {
         bottom: 25px;
     }
