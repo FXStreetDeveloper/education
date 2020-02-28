@@ -881,6 +881,7 @@ a.btn-mod:focus {
 } /* ============================== Home sections ============================== */ /* * Header common styles */
 .home-section {
   width: 100%;
+  height: 100vh;
   display: block;
   position: relative;
   overflow: -webkit-paged-y;
@@ -1008,7 +1009,7 @@ a.btn-mod:focus {
   height: 40px;
   margin-left: -20px;
   position: absolute;
-  bottom:-15px;
+  bottom: -15px;
   left: 50%;
   text-align: center;
   text-decoration: none;
@@ -1017,10 +1018,10 @@ a.btn-mod:focus {
   -o-transition: all 500ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
   transition: all 500ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
-@media(min-width:1200px){
-    .scroll-down {
-      bottom: 20px;
-    }
+@media (min-width: 1200px) {
+  .scroll-down {
+    bottom: 20px;
+  }
 }
 .scroll-down:before {
   display: block;
@@ -5865,7 +5866,7 @@ section:hover .small-item-carousel .owl-next {
   font-weight: bold;
   margin-top: 3rem;
   text-decoration: none;
-  display:block;
+  display: block;
 }
 .fxs_pricing_table_item.fxs_pricing_featured_offer a {
   background-color: white;
