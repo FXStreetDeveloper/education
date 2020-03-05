@@ -348,6 +348,8 @@ Primary use:    MultiPurpose Template
         right: 17px;
     }
 
+    .nav-logo-wrap{width: 115px;}
+
 }
 
 @media only screen and (max-width: 767px) {
