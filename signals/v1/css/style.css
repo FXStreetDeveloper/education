@@ -5875,7 +5875,7 @@ section:hover .small-item-carousel .owl-next {
 
 @media (max-width: 1200px) {
   .js-height-full.container {
-    height: auto !important;
+    overflow-y: auto;
     padding-top: 60px;
     padding-bottom: 40px;
   }
