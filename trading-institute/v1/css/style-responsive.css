@@ -703,6 +703,7 @@ Primary use:    MultiPurpose Template
         padding-left: 5px;
 
     }
+    .section-text ul img {width: 4%;}
     
     .tpl-minimal-tabs > li {
         padding: 0;
