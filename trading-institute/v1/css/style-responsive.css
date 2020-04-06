@@ -697,6 +697,12 @@ Primary use:    MultiPurpose Template
         font-size: 15px;
         line-height: 1.7;
     }
+    .section-text > ul{
+        font-size: 15px;
+        line-height: 1.7;
+        padding-left: 5px;
+
+    }
     
     .tpl-minimal-tabs > li {
         padding: 0;
