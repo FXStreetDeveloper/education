@@ -938,7 +938,7 @@ a.btn-mod:focus {
 @media (min-width: 992px) {
   .home-text .background,
   .home-text .background-2 {
-    height: 350px;
+    height: 390px;
   }
   .home-text .background .local-scroll,
   .home-text .background-2 .local-scroll {
